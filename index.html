@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@500&display=swap" rel="stylesheet">
+    
+    <title>Weather-app</title>
+</head>
+<body>
+    <div id="outer">
+        <div id="top">
+            <input type="text" name="search" id="search" placeholder="enter city name">
+            <button id="search_icon"><img src="images/search.png"></button>
+        </div>
+        <div>
+            <p class="error">Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" >
+                    <div>
+                        <p class="humidity">53%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" >
+                    <div>
+                        <p class="wind-speed">5.86 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
